@@ -1,0 +1,8 @@
+# executable binary
+hello
+
+# lang/c
+*.o
+
+# lang/emacs-lisp
+*.elc
