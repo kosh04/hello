@@ -1,7 +1,10 @@
 CC ?= gcc
 TARGET := hello
 
-default: run
+default: info run
+
+info:
+	$(CC) --version
 
 run: $(TARGET)
 	./$(TARGET)
@@ -9,4 +12,4 @@ run: $(TARGET)
 clean:
 	$(RM) $(TARGET)
 
-.PHONY: run clean
+.PHONY: info run clean

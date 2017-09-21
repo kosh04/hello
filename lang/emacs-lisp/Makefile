@@ -2,7 +2,10 @@ include emacs.mk
 
 TARGET := hello.elc
 
-default: run
+default: info run
+
+info:
+	$(EMACS) --version
 
 run: $(TARGET)
 #	$(EMACS) -batch -l $(TARGET)

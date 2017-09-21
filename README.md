@@ -8,8 +8,8 @@
 
 ## 仕様
 
-- 実行可能であること
 - "Hello World" を表示する
+- コマンドラインから実行可能
 - Makefile 付属 (`make` コマンドを叩けばとりあえず動かせる)
 
 ### オプション
@@ -19,3 +19,7 @@
   - 参考ソフトウェア [GNU Hello](https://www.gnu.org/software/hello/manual/hello.html)
 - パッケージ管理システムの使用
 - テストツールの使用
+
+## 類似プロジェクト
+
+- https://github.com/leachim6/hello-world

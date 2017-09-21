@@ -1,3 +1,8 @@
-all:
-	make -C lang/c
-	make -C lang/emacs-lisp
+LANGUAGES := $(wildcard lang/*/.)
+
+default info clean: $(LANGUAGES)
+
+$(LANGUAGES):
+	$(MAKE) -C $(@) $(MAKECMDGOALS)
+
+.PHONY: default info clean $(LANGUAGES)
