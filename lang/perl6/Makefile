@@ -1,4 +1,4 @@
-PERL6 ?= perl6$(if eq "$(OS)" "Windows_NT",.bat)
+PERL6 ?= perl6$(if $(findstring $(OS),Windows_NT),.bat)
 
 default: info run
 
