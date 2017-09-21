@@ -6,4 +6,4 @@ addons:
       - emacs
 
 script:
-  - make all
+  - make -k

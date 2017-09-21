@@ -1,0 +1,6 @@
+# executable binary
+hello
+*.exe
+
+# lang/c
+*.o
