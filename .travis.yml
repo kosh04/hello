@@ -1,5 +1,8 @@
 language: generic
 
+perl6:
+  - latest
+
 addons:
   apt:
     packages:
