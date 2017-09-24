@@ -1,12 +1,16 @@
 language: generic
 
-perl6:
-  - latest
+dist: trusty
+sudo: required
 
 addons:
   apt:
     packages:
       - emacs
+
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y rakudo
 
 script:
   - make -k
