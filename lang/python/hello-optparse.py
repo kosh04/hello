@@ -6,14 +6,15 @@
 
 from optparse import OptionParser
 
+
 def main():
     parser = OptionParser(version="%prog 1.0")
     parser.add_option("-g", "--greeting",
-                metavar="TEXT",
-                help="Output text instead of the default greeting."),
+                      metavar="TEXT",
+                      help="Output text instead of the default greeting."),
     parser.add_option("-t", "--traditional",
-                action="store_true",
-                help="Output the traditional greeting message 'hello, world'.")
+                      action="store_true",
+                      help="Output the traditional greeting message 'hello, world'.")
 
     opts, args = parser.parse_args()
 
@@ -24,4 +25,5 @@ def main():
     print(text)
 
 
-if __name__ == '__main__': main()
+if __name__ == '__main__':
+    main()

@@ -2,6 +2,7 @@
 
 import argparse
 
+
 def main():
     parser = argparse.ArgumentParser(description="Hello program")
     parser.add_argument("-g", "--greeting",
@@ -22,4 +23,5 @@ def main():
     print(text)
 
 
-if __name__ == '__main__': main()
+if __name__ == '__main__':
+    main()
