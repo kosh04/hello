@@ -12,6 +12,12 @@ before_install:
   - sudo apt-get -qq update
   - sudo apt-get install -y rakudo
   - sudo apt-get install -y leiningen
+  - curl -s "https://get.sdkman.io" | bash
+  - source ~/.sdkman/bin/sdkman-init.sh
+  - echo sdkman_auto_answer=true > ~/.sdkman/etc/config
+  - sdk version
+  - sdk install kotlin
+  - sdk install maven
 
 script:
   - make -k
