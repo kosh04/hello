@@ -1,10 +1,10 @@
 _EXT    = $(if $(findstring $(OS),Windows_NT),.exe)
 TARGET  = hello$(_EXT)
 VERSION = 0.1
-SOURCES = main.go cli.go
+SOURCES = $(shell go list -f '{{ join .GoFiles "\n"}}')
 LDFLAGS = -ldflags "-X main.Version=$(VERSION)"
 
-.PHONY: default run build test
+.PHONY: default run build test debug clean
 
 default: info run
 
@@ -17,11 +17,16 @@ info:
 	go version
 
 run: $(TARGET)
-	# go run $(SOURCES)
+#	go run $(SOURCES)
 	./$(TARGET)
 
 test:
 	go test -v ./...
 
+debug: LDFLAGS += -gcflags=all="-N -l"
+debug: $(TARGET)
+	gdb ./$(TARGET)
+
 clean:
 	go clean
+	$(RM) $(TARGET)
