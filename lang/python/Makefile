@@ -1,4 +1,4 @@
-PYTHON ?= python
+PYTHON ?= python3
 PY_CACHE_TAG := $(shell $(PYTHON) -c "import sys; print(sys.implementation.cache_tag)")
 
 default: info run

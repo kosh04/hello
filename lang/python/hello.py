@@ -1,6 +1,17 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import argparse
+
+
+def hello():
+    """
+    Help documentation about func hello.
+    its always return "hello".
+
+    >>> hello()
+    'hello'
+    """
+    return "hello"
 
 
 def main():
@@ -24,4 +35,6 @@ def main():
 
 
 if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
     main()
