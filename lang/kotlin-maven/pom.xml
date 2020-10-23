@@ -10,8 +10,7 @@
   <url>http://maven.apache.org</url>
 
   <properties>
-    <kotlin.version>1.0.3</kotlin.version>
-    <junit.version>4.12</junit.version>
+    <kotlin.version>1.4.10</kotlin.version>
     <main.class>hello.HelloKt</main.class>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
   </properties>
@@ -26,7 +25,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>${junit.version}</version>
+      <version>[4.13.1,)</version>
       <scope>test</scope>
     </dependency>
 
