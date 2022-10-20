@@ -10,7 +10,7 @@
   <url>http://maven.apache.org</url>
 
   <properties>
-    <kotlin.version>1.4.10</kotlin.version>
+    <kotlin.version>1.6.0</kotlin.version>
     <main.class>hello.HelloKt</main.class>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
   </properties>
